@@ -110,7 +110,7 @@ make -C "$KERNEL_DIR" \
     ARCH="$ARCH" \
     CROSS_COMPILE="$CROSS_COMPILE" \
     -j"$JOBS" \
-    rpm-pkg \
+    binrpm-pkg \
     RPMBUILD_FLAGS="--define '_topdir /root/rpmbuild'"
 
 # ── Collect output packages ───────────────────────────────────
